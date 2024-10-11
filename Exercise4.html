@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercise 4</title>
+    <style>
+        pre {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let s = ``;
+        
+        for (let i=0; i<8; i++) {
+            s += "<pre>";
+            s += "*";
+            for (let j=0; j<18; j++) {
+                if (i === 0 || i === 7)
+                    s += "*";
+                else
+                    s += " ";
+            }
+            s += "*";
+            s += "</pre></br>";
+        }
+        
+        document.write(s)
+    </script>
+</body>
+</html>
